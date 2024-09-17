@@ -6,3 +6,12 @@ Python 3.x: The project is developed in Python, so you need Python 3.x installed
 MySQL: Used as the backend database to store student details and marks.
 mysql-connector-python: Python library for connecting to the MySQL database (pip install mysql-connector-python).
 Any required IDE: Such as PyCharm, VSCode, or any preferred Python development environment.
+
+# Installation
+1) Make sure you have Python and MySQL installed and running
+2) Run 'dbCreation' file to create database before main code
+3) Install 'MainFunctions' file and 'Final' file in same folder as dbCreation
+4) Run 'Final' and use accordingly
+
+# License
+© 2024 Avinash Doniparti. All rights reserved.

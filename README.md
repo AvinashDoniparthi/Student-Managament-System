@@ -14,4 +14,4 @@ Any required IDE: Such as PyCharm, VSCode, or any preferred Python development e
 4) Run 'Final' and use accordingly
 
 # License
-© 2024 Avinash Doniparti. All rights reserved.
+© 2024 Avinash Doniparthi. All rights reserved.

@@ -41,7 +41,6 @@ def addStudent():
                 print('INVALID')
         except:
             print('INVALID')
-#Class
     while True:
         try:
             stuclass = int(input('Enter Student Class :'))

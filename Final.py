@@ -2,7 +2,7 @@ import mysql.connector as mc
 con = mc.connect(host = 'localhost', user = 'root', password = 'avinashbvm', database = 'studb')
 cur = con.cursor()
 #database creation
-import dbcreation
+import dbCreation
 dbcreation.createdb()
 
 
@@ -17,7 +17,7 @@ cur.execute(f"select * from users where user = '{name}' and password = '{pwd}'")
 if cur.fetchone() is None:
     print('INVALID!')
 else:
-    import Main
+    import MainFunctions
 
 
 

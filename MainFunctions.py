@@ -1,3 +1,4 @@
+#Python - mySQL integration
 import mysql.connector as mc
 import tabulate as tab
 con = mc.connect(host = 'localhost', user = 'root', password = 'avinashbvm', database = 'studb')
@@ -6,7 +7,7 @@ con.autocommit = True
 
 
 #==========================================================================================================================================
-
+#Printing Details of all students 
 def printAll():
     global con
     global cur
@@ -18,7 +19,7 @@ def printAll():
     except:
         print('ERROR HAS OCCURED!! PLEASE TRY AGAIN!!')
 #==========================================================================================================================================
-        
+ #Adding Student       
 def addStudent():
     global con
     global cur
@@ -135,7 +136,7 @@ def addStudent():
     print('''STUDENT HAS BEEN ADDED!!
 WELCOME TO XXXXXX''')
 #==========================================================================================================================================
-
+#Deleting Student record
 def delStudent():
     global con
     global cur
@@ -348,8 +349,9 @@ def editDetails():
                 print('INVALID !')
 
 #==========================================================================================================================================
-
+#Searching for record
 def search():
+    print('|================================================SEARCH FOR STUDENT RECORD================================================|')
     ch = int(input(''' Search By
 1 --> Student ID
 2 --> Student First Name
@@ -448,7 +450,9 @@ def search():
         while True:
             break
 #==========================================================================================================================================
+#Printing marks of student
 def showMarks():
+    print('|================================================DISPLAY STUDENT MARKS================================================|')
     stuid = int(input('Enter ID of student whose mark is to printed :'))
     cur.execute(f"select * from marks where stu_id = {stuid}")
     data = cur.fetchall()
@@ -460,7 +464,7 @@ def showMarks():
                   ,'MID TERM EXAM-II(%)','ANNUAL EXAM(%)']
         print(tab.tabulate(data,header,tablefmt = 'grid'))
 #==========================================================================================================================================
-
+#User choices
 while True:
     try:
         choice = int(input('''
@@ -491,6 +495,7 @@ while True:
     except:
         print('INVALID!')
 #==========================================================================================================================================
+
 
 
 

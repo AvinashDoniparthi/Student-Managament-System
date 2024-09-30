@@ -14,4 +14,4 @@ This project is a comprehensive Student Management System built using Python for
 4) Run 'Final' and use accordingly
 
 # License
-© 2024 Avinash Doniparthi. All rights reserved.
+© 2024 Avinash Doniparthi.
